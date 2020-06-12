@@ -1,4 +1,4 @@
-ifneq ($(BOARD_PROVIDES_BOOTCTRL),true)
+ifeq ($(USE_COMMON_BOOTCTRL),true)
 
 # Preset TARGET_USES_HARDWARE_QCOM_BOOTCTRL for existing platforms.
 ifneq ($(filter msm8953 msm8996 msm8998 msmnile sdm660 sdm710 sdm845,$(TARGET_BOARD_PLATFORM)),)
