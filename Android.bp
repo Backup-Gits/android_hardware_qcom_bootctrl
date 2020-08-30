@@ -11,7 +11,6 @@ filegroup {
 cc_defaults {
     name: "bootctrl_hal_defaults",
     proprietary: true,
-    recovery_available: true,
     header_libs: [
         "libhardware_headers",
         "libsystem_headers",
